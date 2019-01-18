@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+	<!-- Name Search field -->
+	<div class="content-group">
+		<input name="fullname" class="form-control" type="text" placeholder="chercher par id ..." autofocus />
+	</div>
+	<!-- /name search field -->
+	<br>
+	<div class="content-group">
+		<input placeholder="chercher par mot clé ..." autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control input-xlg" [formControl]="searchControl" value="" />
+	</div>
+	<!-- /address search field -->
+</form>
